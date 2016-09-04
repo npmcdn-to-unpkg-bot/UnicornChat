@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Unicorn Chat - Login</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="login.js"></script>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBOtJsrkgSGcE-I1XixmmuMVTj7t3G9gvc",
+    authDomain: "unicornchat-1ab56.firebaseapp.com",
+    databaseURL: "https://unicornchat-1ab56.firebaseio.com",
+    storageBucket: "unicornchat-1ab56.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+  <form action="javascript:login();">
+    <label for="email">Email</label>
+    <input id="email" type="email" required name="email">
+    <label for="password">Password</label>
+    <input id="password" type="password" required name="password">
+    <button type="submit"> Ok </button>
+
+    <a href="signup.html">Sign up</a>
+    <a href="reset-password.html">Forgot password?</a>
+  </form>
+</body>
+
+
+</html>

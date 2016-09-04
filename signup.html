@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <title>Unicorn Chat - Sign up</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="login.js"></script>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBOtJsrkgSGcE-I1XixmmuMVTj7t3G9gvc",
+    authDomain: "unicornchat-1ab56.firebaseapp.com",
+    databaseURL: "https://unicornchat-1ab56.firebaseio.com",
+    storageBucket: "unicornchat-1ab56.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <form action="javascript:signUp();">
+    <label for="username">Username</label>
+    <input id="username" type="text" required name="username">
+    <label for="email">Email</label>
+    <input id="email" type="email" required name="email">
+    <label for="password">Password</label>
+    <input id="password" type="password" required name="password">
+    <label for="repeat-password">Repeat password</label>
+    <input id="repeat-password" type="password" required name="repeat-password">
+    <button type="submit"> Ok </button>
+  </form>
+
+  <a href="login.html">Log in</a>
+</body>
+
+</html>
